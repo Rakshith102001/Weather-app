@@ -1,0 +1,161 @@
+html{
+    height:100%;
+    font-family: poppins;
+}
+
+.cityimg{
+  border-radius:10px;
+  width:500px;
+  height:500px;
+}
+
+.foganim{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:0;
+    left:0;
+    top:0;
+    background:url('fog.png') repeat-x;
+    background-size: auto;
+    background-position: 0 bottom;
+    animation: fogan 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fogan {
+    0% { background-position: -200% bottom;}
+    100% { background-position: 0% bottom;}
+}
+body{
+    vertical-align: middle;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 56%, rgba(60,60,60,1) 100%);
+}
+.fogbg{
+    background-image:url('sky.jpg');
+    background-size: cover;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+    z-index:-1;
+    
+}
+.widget{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    width:700px;
+    height:650px;
+    font-weight: 600;
+    margin-bottom:1cm;
+    margin-top: 0.5cm;
+    }
+
+    input{
+      text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:470px;
+  height:30px;
+  margin-bottom:10px;
+  font-size: 20px;
+  }
+  button{
+  text-align: center;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:150px;
+  height:30px;
+  margin-bottom:10px;
+  }
+  
+h1{
+  text-align: center;
+  background: rgba(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:650px;
+  height:50px;
+  margin-left:25px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  color:#000;
+  }
+
+  table{
+    width:100%;
+    border-color: whitesmoke;
+  }
+
+  .widget3 {
+    /* Use a linear gradient for the background */
+    background: rgba(255, 255, 255, 0.25);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.75);
+width:50%;
+  }
+  
+  /* Media query to adjust background based on table size */
+  @media only screen and (min-width: 200px) {
+    .widget2 {
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+    }
+  }
+  
+  @media only screen and (min-height: 400px) {
+    .widget2 {
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+    }
+  }
+  
+
+
+
+@keyframes shadows {
+    0% { box-shadow: #48abe0 0 0 10px; }
+    50% { box-shadow: #48B65C  0 0 10px; }
+     75% { box-shadow: #48B65C  0 0 10px; }
+     100% { box-shadow: #48abe0 0 0 10px; }
+   }
+   .widget2{
+    margin-bottom:15px;
+    width:85%;
+   }
+
+   .ntd,
+   .nth{
+    padding:5px;
+    text-align:center;
+   }

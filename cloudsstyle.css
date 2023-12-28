@@ -1,0 +1,224 @@
+html{
+  font-family: poppins;
+}
+
+@keyframes clouds-loop-1 {
+    to {
+      background-position: -1000px 0;
+    }
+  }
+  .clouds-1 {
+    background-image: url("https://s.cdpn.io/15514/clouds_2.png");
+    animation: clouds-loop-1 20s infinite linear;
+  }
+  
+  @keyframes clouds-loop-2 {
+    to {
+      background-position: -1000px 0;
+    }
+  }
+  .clouds-2 {
+    background-image: url("https://s.cdpn.io/15514/clouds_1.png");
+    animation: clouds-loop-2 15s infinite linear;
+  }
+  
+  @keyframes clouds-loop-3 {
+    to {
+      background-position: -1579px 0;
+    }
+  }
+  .clouds-3 {
+    background-image: url("https://s.cdpn.io/15514/clouds_3.png");
+    animation: clouds-loop-3 17s infinite linear;
+  }
+  
+  html, body {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,5,22,1) 45%, rgba(5,9,77,1) 100%);
+    text-align: center;
+    vertical-align: middle;
+  }
+  body a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+    color: #b8956b;
+    text-shadow: 0 -1px 0 rgba(250, 248, 245, 0.6), 0 2px 3px #000;
+  }
+  body a span {
+    display: block;
+  }
+  
+  .clouds {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  
+  .clouds-1,
+  .clouds-2,
+  .clouds-3 {
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 500px;
+  }
+  .widget{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    width:700px;
+    height:570px;
+    font-weight: 600;
+    flex-direction: row;
+    margin-bottom:1.5cm;
+    margin-top: 2cm;
+    animation: shadows 10s infinite
+    }
+
+    input{
+      text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:470px;
+  height:30px;
+  margin-bottom:10px;
+  font-size: 20px;
+  }
+  button{
+  text-align: center;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:150px;
+  height:30px;
+  margin-bottom:10px;
+  }
+  
+h1{
+  text-align: center;
+  background: rgba(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width:650px;
+  height:50px;
+  margin-left:25px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  color:#000;
+  }
+  .cityimg{
+    border-radius:10px;
+    width:500px;
+    height:500px;
+  }
+
+  @keyframes shadows {
+    0% { box-shadow: #48abe0 0 0 10px; }
+    50% { box-shadow: #48B65C  0 0 10px; }
+     75% { box-shadow: #48B65C  0 0 10px; }
+     100% { box-shadow: #48abe0 0 0 10px; }
+   }
+.leftside{
+  width: 50%;
+}
+.rightside{
+  padding-left: 350px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table{
+  width:100%;
+  border-color: whitesmoke;
+}
+.widget3 {
+  /* Use a linear gradient for the background */
+  background: rgba(255, 255, 255, 0.25);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.75);
+width:50%;
+}
+
+/* Media query to adjust background based on table size */
+@media only screen and (min-width: 200px) {
+  .widget2 {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(0px);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media only screen and (min-height: 400px) {
+  .widget2 {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(0px);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+  }
+}
+
+
+
+
+@keyframes shadows {
+  0% { box-shadow: #48abe0 0 0 10px; }
+  50% { box-shadow: #48B65C  0 0 10px; }
+   75% { box-shadow: #48B65C  0 0 10px; }
+   100% { box-shadow: #48abe0 0 0 10px; }
+ }
+ .widget2{
+  margin-bottom:15px;
+  width:85%;
+ }
+
+ .ntd,
+ .nth{
+  padding:5px;
+  text-align:center;
+ }

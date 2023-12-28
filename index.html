@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Application</title>
+    </head>
+    <body>
+        <link ng-href="{{styleUrl}}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <title>Weather App</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="weatherApp" ng-controller="WeatherController">
+    <center><div class="widget"><h1>Weather Forcasting Application</h1>
+    <input type="text" ng-model="city" placeholder="Enter city name"><br>
+    <button ng-click="getWeather()">Get Weather</button>
+    <div ng-if="weatherData" class="cont"><br>
+        <table width="100%" style="text-align: center;font-weight: 700;">
+        <tr>
+        <td><h2>{{ city | uppercase}},{{ weatherData.sys.country}}</h2></td>
+        <td colspan="2"><p style="font-size:45px; font-weight: 800 ;">{{ weatherData.main.temp }} &#8451;</p></td>
+        
+        </tr>
+        <tr>
+        <td><p style="font-size:15px;">{{date | date: 'd/MMM/y'}}</p></td>
+        </tr></table>
+        <br><br><hr color="white">
+        <table width="100%" style="text-align: center;font-weight: 700;"><tr>
+        <td><p>Weather: {{ weatherData.weather[0].description }}</p></td>
+        <td><p>Humidity: {{ weatherData.main.humidity }} &#x25;</p></td>
+        <td><p>Wind speed: {{ weatherData.wind.speed }} m/s</p></td>
+        </tr></table><hr color="white">
+        <h2>Weekly weather forecast</h2>
+        <table border="1px">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Temperature (°C)</th>
+            </tr>
+                <tr ng-repeat="forecast in forecasts">
+                    <td>{{ forecast.date.toDateString() }}</td>
+                    <td>{{ forecast.description }}</td>
+                    <td>{{ forecast.temperature /10 |number:2 }}°C</td>
+                </tr>
+        </table>
+    </div></div></center>
+    <center><img class="cityimg" ng-src="{{cityImageUrl}}"></center>
+
+    <center><button ng-show="showbutton" ng-click="retrieveData()" class="ret">Retrieve Data</button>
+
+    <!-- Table to display retrieved data -->
+    <div class="widget3">
+    <h1 ng-show="showTable">PREVIOUSLY FETCHED DATA</h1>
+    
+    <table ng-show="showTable" border="5" class="widget2" style="border-color: black;">
+            <tr>
+                <th class="nth">Date</th>
+                <th class="nth">City</th>
+                <th class="nth">Temperature</th>
+                <th class="nth">Description</th>
+            </tr>
+            <tr ng-repeat="entry in retrievedData">
+                <td class="ntd">{{ entry.date.slice(0,10).split("-").reverse().join("-") }}</td>
+                <td class="ntd">{{ entry.city }}</td>
+                <td class="ntd">{{ entry.temperature }}</td>
+                <td class="ntd">{{ entry.description }}</td>
+            </tr>
+    </table></center></div>
+
+
+    <center><p style="color:white;">&copy Created with &#x2764; By Rakshith S Nadiger</p></center>
+    
+    <script src="weatherfetch.js"></script> 
+    <div class="raine"></div>
+    <div class='clouds'>
+    <div class='clouds-1'></div>
+    <div class='clouds-2'></div>
+    <div class='clouds-3'></div>
+  </div>  
+  <div id="sky">
+	<div class="theSun">
+		<div class="ray_box">
+			<div class="ray ray1"></div>
+			<div class="ray ray2"></div>
+			<div class="ray ray3"></div>
+			<div class="ray ray4"></div>
+			<div class="ray ray5"></div>
+			<div class="ray ray6"></div>
+			<div class="ray ray7"></div>
+			<div class="ray ray8"></div>
+			<div class="ray ray9"></div>
+			<div class="ray ray10"></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="fogbg">
+<div class="foganim"></div></div><div>
+    </body>
+</html>
